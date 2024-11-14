@@ -1,0 +1,47 @@
+html {
+  font-family: "Poppins", sans-serif;
+  color: #FFFFFF;
+
+  ;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  box-sizing: border-box;
+  padding: 24px 20px 88px;
+  height: 100vh;
+  background-image: url(imeges/header-bg-phone.png);
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__icons{
+  display: flex;
+  gap: 24px;
+}
+
+.icon {
+  display: block;
+  height: 24px;
+  width: 24px;
+}
+
+.header__title {
+  margin: 0;
+  font-weight:700;
+  line-height: 36px;
+  font-size: 36px;
+  letter-spacing: -1.5px;
+  text-align: center;
+}
