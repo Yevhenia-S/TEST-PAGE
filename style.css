@@ -1,14 +1,34 @@
-html {
+/* #region page */
+:root {
+  --menu-color: #1D1D1D;
+}
+
+.page {
   font-family: "Poppins", sans-serif;
   color: #FFFFFF;
-
-  ;
+  scroll-behavior: smooth;
 }
 
-body {
+.page__body {
   margin: 0;
+  background-color: rgb(109, 168, 197);
 }
 
+.page__menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.page__menu:target {
+  opacity: 1;
+  pointer-events: all;
+}
+/* #endregion */
+/* #region header */
 .header {
   box-sizing: border-box;
   padding: 24px 20px 88px;
@@ -26,19 +46,14 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.logo {
-  display: flex;
-}
 
 .header__icons{
   display: flex;
   gap: 24px;
 }
 
-.icon {
-  display: block;
-  height: 24px;
-  width: 24px;
+.logo {
+  display: flex;
 }
 
 .header__title {
@@ -49,3 +64,49 @@ body {
   letter-spacing: -1.5px;
   text-align: center;
 }
+/* #endregion */
+/* #region menu */
+.menu {
+  box-sizing: border-box;
+  padding: 24px 20px 88px;
+  height: 100vh;
+  background-color:#C2C2C2;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.menu__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__phone-number {
+  color: var(--menu-color);
+}
+
+.menu__call-to-testride {
+  color: var(--menu-color);
+}
+/* #endregion */
+/* #region nav */
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.nav__link {
+  color: var(--menu-color);
+}
+/* #endregion */
+/* #region icon */
+.icon {
+  display: block;
+  height: 24px;
+  width: 24px;
+}
+/* #endregion */
